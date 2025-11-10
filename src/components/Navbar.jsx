@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { Flame, Github, Moon, SunMedium } from 'lucide-react'
+import { Github, Moon, SunMedium } from 'lucide-react'
+import Logo from './Logo'
 
 function ThemeToggle() {
   const [dark, setDark] = useState(false)
@@ -30,10 +31,10 @@ export default function Navbar() {
     <header className="sticky top-0 z-30 w-full border-b border-gray-100/60 dark:border-white/10 bg-white/70 dark:bg-gray-950/60 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-tr from-purple-500 via-blue-500 to-orange-400 text-white shadow">
-            <Flame size={16} />
+          <div className="relative flex h-8 w-8 items-center justify-center">
+            <Logo size={32} />
           </div>
-          <span className="text-sm font-semibold tracking-wide text-gray-900 dark:text-white">Flames Vibe</span>
+          <span className="text-sm font-semibold tracking-wide text-gray-900 dark:text-white">SPANZ FLAMES</span>
         </a>
         <nav className="hidden sm:flex items-center gap-6 text-sm text-gray-700 dark:text-gray-300">
           <a href="#chat" className="hover:text-gray-900 dark:hover:text-white">Chat</a>
